@@ -1,0 +1,138 @@
+:root {
+    --text: #efefef;
+
+    --first: #214563;
+    --firstShadow: #15293a;
+    --second: #456321;
+    --third: #632145;
+
+    --backgroundImage: url("../assets/imgs/background.png");
+    --logoImage: url("../assets/imgs/logo.png");
+    --nextIcon: url("../assets/icones/next.png");
+    --quitIcon: url("../assets/icones/quit.png");
+    --startIcon: url("../assets/icones/start.png");
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    font-size:2.5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--text);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+div#App {
+    height: 100vh;
+    max-width: 100vw;
+    aspect-ratio: 9/16;
+    background-image: var(--backgroundImage);
+    background-size: cover;
+    margin: auto;
+}
+
+header{
+    height: 25vh;
+    background-image: var(--logoImage);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#container{
+    width: auto;
+    height: calc(75vh - 2*1vw);
+    margin: 0;
+    padding: 1vw;
+}
+
+/** RULES **/
+div#rules{
+    display:none;
+}
+
+#buttonsPanel {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    bottom: 0;
+}
+
+#buttonsPanel button {
+    width: 10vh;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--second);
+    border-radius: 50%;
+    
+    
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: -2px 2px var(--firstShadow);
+}
+#buttonsPanel button#startApp {
+    background-image: var(--startIcon);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#buttonsPanel button#quitRules {
+    background-image: var(--quitIcon);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#buttonsPanel button#nextRules {
+    background-image: var(--nextIcon);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#buttonsPanel button:hover {
+    background-color: var(--third);
+}
+
+#buttonsPanel button:active {
+    background-color: var(--third);
+    box-shadow: 0 0 #666;
+    transform: translateY(4px);
+}
+
+/** NAMES **/
+div#names{
+    width: 100%;
+    height: 100%;
+    display:block;
+}
+
+/** PACKAGES **/
+div#packages{
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+/** GAME **/
+div#game{
+    width: 100%;
+    height: 100%;
+    display:none;
+}
