@@ -53,20 +53,24 @@ header{
 
 div#container{
     width: auto;
-    height: calc(75vh - 2*1vw);
+    height: 75vh;
     margin: 0;
-    padding: 1vw;
 }
 
 /** RULES **/
 div#rules{
     display:none;
+    width: calc((100% - 2*1vh));
+    padding: 1vh;
+    height: calc((100% - 2*1vh));
+    position: relative; 
 }
 
 #buttonsPanel {
-    width: 100%;
-    height: 15vh;
+    width: calc((100% - 2*1vh));
+    height: 12vh;
     display: flex;
+    position: absolute;
     bottom: 0;
 }
 
@@ -120,14 +124,51 @@ div#rules{
 div#names{
     width: 100%;
     height: 100%;
-    display:block;
+    display:none;
 }
 
 /** PACKAGES **/
 div#packages{
     width: 100%;
     height: 100%;
-    display:none;
+    display:block;
+    position: relative;
+}
+
+div#packages div#liarsNumber{
+    width: calc(100% - 2*2vh);
+    height: 7vh;
+    padding: 2vh;
+    display: flex;
+    position: absolute;
+    background-color: var(--firstShadow);
+    bottom: 0; 
+}
+div#packages div#liarsNumber div{
+    width: 70%;
+}
+div#packages div#liarsNumber div input{
+    width: 100%;
+}
+div#packages div#liarsNumber datalist {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    overflow: hidden;
+    margin-top: 16px;
+}
+div#packages div#liarsNumber option:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: auto;
+    padding-left: 3px;
+    text-indent: 0;
+}
+div#packages div#liarsNumber label{
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
 }
 
 /** GAME **/
