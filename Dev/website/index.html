@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <title>Le Bonimenteur Game</title>
         <link href="css/global-style.css" rel="stylesheet">
+        <link href="css/RulesPage.css" rel="stylesheet">
+        <link href="css/NamesPage.css" rel="stylesheet">
+        <link href="css/PackagePage.css" rel="stylesheet">
+        <link href="css/GamePage.css" rel="stylesheet">
     </head>
     <body>
         <div id="App">
@@ -24,12 +28,33 @@
                     names
                 </div>
                 <div id="packages">
-                    <div id="packagesList">
+                    <div id="packages-list">
+                        <!--<button class="package">
+                            <div class="package-img">
+                                <img src="assets/imgs/logo.png" alt="namePackage">
+                            </div>
+                            <div class="package-text">
+                                <h2>NamePackage</h2>
+                                <div>description package</div>
+                            </div>
+                        </button>--><!--
+                        <button class="package">
+                            <div class="package-img">
+                                <img src="assets/imgs/logo.png" alt="namePackage">
+                            </div>
+                            <div class="package-text">
+                                <h2>NamePackage</h2>
+                                <div>description package description package description package description package
+                                    description package description package description package description package
+                                    description package description package description package description package
+                                </div>
+                            </div>
+                        </button>-->
 
                     </div>
                     <div id="liarsNumber">
                         <div>
-                            <input type="range" list="tickmarks" id="liars" name="liars" min="1" max="5">
+                            <input type="range" list="tickmarks" id="liars" name="liars" min="1" max="5" value="1">
                             <datalist id="tickmarks">
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -48,4 +73,7 @@
 
         </div>
     </body>
+
+    
+    <script src="./js/Packages.js"></script>
 </html>
