@@ -37,7 +37,7 @@ class PackageList {
     BuildPackageListHTML(){
         var listHTML = "";
         for (let pas = 0; pas < this.packagesNumber; pas++) {
-            listHTML += "<button class=\"package\">"+
+            listHTML += "<button onClick=\"ChoosePackage(" + pas + ")\" class=\"package\">"+
                             "<div class=\"package-img\">"+
                                 "<img src=\""+ packages[pas].ImageURL + "\" alt=\""+ packages[pas].Name + "\">"+
                             "</div>"+
@@ -53,6 +53,28 @@ class PackageList {
     }
 }
 
+function SetLiarsNumber(_number){
+    const liarsNumber_html = document.getElementById('liarsNumber');
+    const number = Names.length - 1;
+    var textHTML = "";
+    if (number > 1){
+        textHTML += "<div>" +
+                        "<input type=\"range\" list=\"tickmarks\" id=\"liars\" name=\"liars\" min=\"1\" max=\"" + number + "\" value=\"1\">" +
+                        "<datalist id=\"tickmarks\">";
+    for (let pas = 1; pas <= number; pas++){
+        textHTML += "<option value=\"" + pas + "\">" + pas + "</option>";
+    }
+    textHTML += "</datalist>" +
+                "</div>" +
+                "<label for=\"liars\">Menteur(s)</label>";
+    }
+    else{
+        textHTML += "<label for=\"liars\">1 Menteur(s)</label>";
+    }
+    
+    liarsNumber_html.innerHTML = textHTML;
+}
+
 const myThemes = [
     ["theme0", "theme1", "theme2"],
     ["theme0", "theme1", "theme2"],
@@ -66,4 +88,20 @@ const packages = [
 
 const package_list = new PackageList(packages, packages.length);
 const package_list_html = document.getElementById('packages-list');
-package_list_html.innerHTML += package_list.BuildPackageListHTML();
+var LiarsNumber = 1;
+if (package_list_html != null) package_list_html.innerHTML += package_list.BuildPackageListHTML();
+
+var CurrentPackage = null;
+
+function ChoosePackage(_index){
+    CurrentPackage = packages[_index].themes;
+    const liars_html = document.getElementById('liars');
+    if (liars_html != null){
+        LiarsNumber = liars_html.value;
+    }
+    else{
+        LiarsNumber = 1;
+    }
+    console.debug("LiarsNumber : " + LiarsNumber);
+    OnPackageChoosen();
+}
