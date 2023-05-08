@@ -104,9 +104,9 @@ const myThemes = [
 
 
 const packages = [
-    new Package("Entre potes", "Soyez prêt à perdre des amis.", myThemes[0], myThemes[0].length, "../assets/icones/stupid.png"),
-    new Package("Sérieux", "Abrutis d'abstenir.", myThemes[1], myThemes[1].length, "../assets/icones/brain.png"),
-    new Package("Coquin", "Gros pervers va !", myThemes[2], myThemes[2].length, "../assets/icones/hot.png")
+    new Package("Entre potes", "Soyez prêt à perdre des amis.", myThemes[0], myThemes[0].length, "./assets/icones/stupid.png"),
+    new Package("Sérieux", "Abrutis d'abstenir.", myThemes[1], myThemes[1].length, "./assets/icones/brain.png"),
+    new Package("Coquin", "Gros pervers va !", myThemes[2], myThemes[2].length, "./assets/icones/hot.png")
 ];
 
 const package_list = new PackageList(packages, packages.length);
