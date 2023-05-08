@@ -1,0 +1,80 @@
+/** NAMES **/
+div#names {
+    width: 100%;
+    height: 100%;
+    display:none; /* display:block; */
+}
+
+div#names div#names-list {
+    width: calc(100% - 2*1vh);
+    height: 20vh;
+    padding: 0 1vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* scrollbar width */
+div#names div#names-list::-webkit-scrollbar {
+    width: 0px;
+}
+
+div#names div#names-list button {
+    padding: 0.5vh;
+    margin-top: 1vh;
+    background-color: var(--second);
+    color: var(--text);
+    border: 2px solid var(--second);
+    font-size: 2vh;
+}
+
+div#names div#names-list button:hover {
+    background-color: var(--first);
+    color: var(--text);
+}
+
+div#names div#name-input {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--text);
+}
+
+div#names div#name-input input{
+    height: 90%;
+    width: 66.45%;
+    font-size: 4vh;
+    padding: 0 1vh;
+    margin: 0;
+    border: none;
+    outline: none;
+    top: 0;
+    background-color: var(--text);
+}
+div#names div#name-input input::focus{
+    border: none;
+}
+
+div#names div#name-input button{
+    height: 100%;
+    width: 15%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: var(--text);
+    font-size: 5vh;
+}
+div#names div#name-input button#AddPlayerName {
+    border: 2px solid var(--second);
+    background-color: var(--second);
+}
+div#names div#name-input button#ChoosePackage {
+    border: 2px solid var(--third);
+    background-color: var(--third);
+}
+div#names div#name-input button#AddPlayerName:hover {
+    background-color: var(--text);
+    color: var(--second);
+}
+div#names div#name-input button#ChoosePackage:hover {
+    background-color: var(--text);
+    color: var(--third);
+}
