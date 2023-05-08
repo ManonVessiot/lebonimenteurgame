@@ -14,28 +14,20 @@ function InitializeGame(){
     if (index > -1) {
         CurrentPackage.splice(index, 1);
     }
-    CurrentLiar = [];
+    CurrentLiars = [];
     OthersNames = [];
     Names.forEach(element => {
         OthersNames.push(element);
     });
 
-    console.debug("LiarsNumber : " + LiarsNumber);
     for (var i = 0; i < LiarsNumber; i++){
         var liarIndex = Math.floor(Math.random() * OthersNames.length)
-        CurrentLiar.push(OthersNames[liarIndex]);
+        CurrentLiars.push(OthersNames[liarIndex]);
         OthersNames.splice(liarIndex, 1);
     }
-
-    CurrentLiar.forEach(element => {
-        console.debug("CurrentLiar : " + element);
-    });
-    OthersNames.forEach(element => {
-        console.debug("OthersNames : " + element);
-    });
     
     CurrentName = 0;
-    GameText.innerHTML = Names[CurrentName];
+    GameText.innerHTML = "Player :<br><br>" + Names[CurrentName];
     
     ShowingName = true;
     nextGame.style.display = "block";
@@ -47,9 +39,16 @@ function InitializeGame(){
     }
 }
 
+function Contains(_list, _element){
+    _list.forEach(element => {
+        if (_element == element) return true;
+    });
+    return false;
+}
+
 function GameNext(){
     if (CurrentName >= Names.length) return;
-    // TODO : Check here
+    
     if (ShowingName){
         if (CurrentLiars.includes(Names[CurrentName])){
             GameText.innerHTML = "Menteur";
@@ -62,7 +61,7 @@ function GameNext(){
     else{
         CurrentName++;
         if (CurrentName < Names.length){
-            GameText.innerHTML = Names[CurrentName];
+            GameText.innerHTML = "Player :<br><br>" + Names[CurrentName];
             ShowingName = true;
         }
         else{

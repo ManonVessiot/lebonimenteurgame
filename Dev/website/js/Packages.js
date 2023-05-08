@@ -91,10 +91,13 @@ const package_list_html = document.getElementById('packages-list');
 var LiarsNumber = 1;
 if (package_list_html != null) package_list_html.innerHTML += package_list.BuildPackageListHTML();
 
-var CurrentPackage = null;
+var CurrentPackage = [];
 
 function ChoosePackage(_index){
-    CurrentPackage = packages[_index].themes;
+    CurrentPackage = [];
+    packages[_index].themes.forEach(element => {
+        CurrentPackage.push(element);
+    });
     const liars_html = document.getElementById('liars');
     if (liars_html != null){
         LiarsNumber = liars_html.value;
@@ -102,6 +105,5 @@ function ChoosePackage(_index){
     else{
         LiarsNumber = 1;
     }
-    console.debug("LiarsNumber : " + LiarsNumber);
     OnPackageChoosen();
 }

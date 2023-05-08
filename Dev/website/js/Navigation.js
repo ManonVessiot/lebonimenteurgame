@@ -19,6 +19,7 @@ function OnInitialize(){
     PackagesHTML.style.display = "none";
     GameHTML.style.display = "none";
     currentPage = 0;
+    InitializeRules();
 }
 
 function OnRulesQuit(){
@@ -55,6 +56,7 @@ function Back(){
     else if (currentPage == 1){
         RulesHTML.style.display = "block";
         NamesHTML.style.display = "none";
+        InitializeRules();
     }
     currentPage--;
 }

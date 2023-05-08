@@ -129,3 +129,30 @@ div#packages div#liarsNumber label{
     text-align: center;
     width: 30%;
 }
+
+/* Quit */
+div#packages button#quitPackage {
+    width: 8vh;
+    height: 8vh;
+    position: absolute;
+    top: -9vh;
+    left: 1vh;
+    
+    background-color: var(--second);
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-shadow: -2px 2px var(--firstShadow);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: var(--quitIcon);
+}
+div#packages button#quitPackage:hover {
+    background-color: var(--third);
+}
