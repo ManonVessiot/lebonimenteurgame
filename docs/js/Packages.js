@@ -93,8 +93,11 @@ const myThemes = [
     "Battre son conjoint", "Brigitte macron", "Emily ratajkowski", "Les guinguettes", "Le baby foot", "Le jeux gta", "Lionel messi", "Cristiano ronaldo", "La ps5", 
     "La nintendo switch", "Les pates 3 minutes", "Les talons aiguilles", "Les ballerines", "Les maillots strings", "Primark", "Dormir en cuillère", "Le métro", 
     "Le fiat multipla", "L'acné", "L'appareil dentaire", "Le poivre", "Le catch", "Les chats", "Les chiens", "Faire son lit"],
+    
     ["avortement", "theme1", "theme2"],
-    ["theme0", "theme1", "theme2"]
+    
+    ["le préservatif", "la sodomie", "la polygamie", "le nudisme", "le BDSM", "la prostitution", "la circonsition", 
+    "les strings", "le gode ceinture", "sucer c'est tromper", "finir dans la bouche", "Le viagra", "L'inceste", "La pornographie", "La pedopornographie", "La zoophilie"]
 ];
 
 
