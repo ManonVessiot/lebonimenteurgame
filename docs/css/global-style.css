@@ -6,12 +6,12 @@
     --second: #456321;
     --third: #632145;
 
-    --backgroundImage: url("../assets/imgs/background.png");
-    --logoImage: url("../assets/imgs/logo.png");
-    --nextIcon: url("../assets/icones/next.png");
-    --quitIcon: url("../assets/icones/quit.png");
-    --startIcon: url("../assets/icones/start.png");
-    --restartIcon: url("../assets/icones/restart.png");
+    --backgroundImage: url("../../assets/imgs/background.png");
+    --logoImage: url("../../assets/imgs/logo.png");
+    --nextIcon: url("../../assets/icones/next.png");
+    --quitIcon: url("../../assets/icones/quit.png");
+    --startIcon: url("../../assets/icones/start.png");
+    --restartIcon: url("../../assets/icones/restart.png");
 }
 
 html{

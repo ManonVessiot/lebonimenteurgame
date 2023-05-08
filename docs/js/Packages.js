@@ -76,14 +76,37 @@ function SetLiarsNumber(_number){
 }
 
 const myThemes = [
-    ["theme0", "theme1", "theme2"],
-    ["theme0", "theme1", "theme2"],
+    ["monokini", "l'adultère", "mentir", "facebook", "instagram", "twitter", "les placements de produits", "la colocation", "tiktok", "les caricatures", "tinder", 
+    "claquette chaussettes", "baisser l'abattant des wc", "la télé-réalité", "le salaire des footbaleurs", "les films 3D", "le popcorn salé", "dire chocolatine", "les gilet jaunes", 
+    "le saut à l'élastique", "écrire des lettres", "la polygamie", "le réchauffement climatique", "péter devant son/sa partenaire", "les poils", "le nudisme", "boire du vin à table", 
+    "les croisière en bateau", "les régimes", "le nutella", "les camping car", "la bombe nucléaire", "les caméras de surveillance", "les fastfood", "le BDSM", "les voyages spaciaux", 
+    "le rap", "la musique classique", "les crocs", "les apéro-dinatoire", "l'ananas sur la pizza", "l'indépendance de la corse", "le theoreme de pytagore", "le darknet", 
+    "la circonsition", "le bizutage", "les strings", "tricher au bac", "le camping", "le fromage de chêvre", "les roumains", "beurre demi sel", "le maquillage", 
+    "les auberges de jeunesse", "les livres audio", "les piles rechargeables", "les trottinettes électriques", "savoir quand tu vas mourir", "savoir comment tu vas mourir", 
+    "rire de tout", "les percings", "les tatouages", "toilettes japonaises", "toilettes turcs", "toilettes sèches", "le slip", "le moule bite sur la plage", "les assistants vocaux", 
+    "pipi sous la douche", "le naturisme", "Apple (iOS)", "la cuisine au micro-onde", "Dormir avec des chaussettes", "Manger ses crottes de nez", "Les jeux vidéos", "Le bandana", 
+    "Le debardeur", "La coupe mulet", "Les ferias", "La bière", "L’accent quebecois", "Le protoxyde d’azote", "Le poppers", "Le matelas gonflable", "La lecture", "La méditation", 
+    "Les habits de marque", "La kronenbourg", "Les boites de nuit", "Les fetes de village", "Les business school", "Le canoe", "Le bowling", "L’accrobranche", "Les heures de colle", 
+    "Les divisions", "Le k-way", "La vodka", "Le whisky", "Le cigare", "Offrir des roses", "La saint valentin", "Taxi 5 (le film)", "Prison break", "Plus belle la vie", "Malcolm", 
+    "Star wars", "Harry potter", "Les mangas", "Les dessins animés", "L'opéra", "Les forfaits free", "Le covoiturage", "Faire du stop", "La tecktonik", "Les western", 
+    "Les espagnol(e)s", "Le loto", "Les paris sportifs", "Les mots croisés", "Les malabars", "3 cafes gourmands", "Johnny halliday", "Harley davidson", "Les blocus", 
+    "Battre son conjoint", "Brigitte macron", "Emily ratajkowski", "Les guinguettes", "Le baby foot", "Le jeux gta", "Lionel messi", "Cristiano ronaldo", "La ps5", 
+    "La nintendo switch", "Les pates 3 minutes", "Les talons aiguilles", "Les ballerines", "Les maillots strings", "Primark", "Dormir en cuillère", "Le métro", 
+    "Le fiat multipla", "L'acné", "L'appareil dentaire", "Le poivre", "Le catch", "Les chats", "Les chiens", "Faire son lit"],
+    ["avortement", "theme1", "theme2"],
     ["theme0", "theme1", "theme2"]
 ];
+
+
+
+
+
+
+
 const packages = [
-    new Package("Entre potes", "Soyez prêt à perdre des amis.", myThemes[0], myThemes[0].length, "./assets/icones/stupid.png"),
-    new Package("Sérieux", "Abrutis d'abstenir.", myThemes[1], myThemes[1].length, "./assets/icones/brain.png"),
-    new Package("Coquin", "Gros pervers va !", myThemes[2], myThemes[2].length, "./assets/icones/hot.png")
+    new Package("Entre potes", "Soyez prêt à perdre des amis.", myThemes[0], myThemes[0].length, "../assets/icones/stupid.png"),
+    new Package("Sérieux", "Abrutis d'abstenir.", myThemes[1], myThemes[1].length, "../assets/icones/brain.png"),
+    new Package("Coquin", "Gros pervers va !", myThemes[2], myThemes[2].length, "../assets/icones/hot.png")
 ];
 
 const package_list = new PackageList(packages, packages.length);
