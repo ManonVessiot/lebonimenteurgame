@@ -94,16 +94,18 @@ const myThemes = [
     "La nintendo switch", "Les pates 3 minutes", "Les talons aiguilles", "Les ballerines", "Les maillots strings", "Primark", "Dormir en cuillère", "Le métro", 
     "Le fiat multipla", "L'acné", "L'appareil dentaire", "Le poivre", "Le catch", "Les chats", "Les chiens", "Faire son lit"],
     
-    ["avortement", "theme1", "theme2"],
+    ["avortement", "monokini", "burkini", "mariage pour tous", "l'adoption", "la peine de mort", "la légalisation du canabis", "inerdiction de fumer dans les lieux publics", 
+    "l'uniforme à l'école", "la chasse", "le chomage", "le confinement", "le couvre feu", "la pillule", "le préservatif", "la sodomie", "la chirurgie esthétique", "le bio", 
+    "les zoo", "les gilet jaunes", "les religions", "les caméras de surveillance", "le PACS", "le mariage", "la prostitution", "le brexit", "les points sur le permis", 
+    "l'indépendance de la corse", "le transumanisme", "la royauté", "les armes à feu", "l'homéopathie", "les antidépresseurs", "le bizutage", "les liseuses", "les jeux d'argent", 
+    "école à la maison", "euthanasie", "corrida", "le vaccin", "les animaux dans les cirques", "végétarien", "les grandes surfaces ouvertes le dimanche", "l'homosexualité", 
+    "le port du voile", "les protections hygiéniques remboursés par la CQ", "voitures électriques", "l'euthanasie", "le port du masque", "l'allètement", "Les cours à distance", 
+    "Le bio", "Le télétravail", "La sncf", "La pêche intensive", "Les coffee shops", "L'expatriation", "Les paradis fiscaux", "Les grèves", "Donald trump", "Emmanuel macron", 
+    "Le rsa", "Les autos électrique"],
     
     ["le préservatif", "la sodomie", "la polygamie", "le nudisme", "le BDSM", "la prostitution", "la circonsition", 
     "les strings", "le gode ceinture", "sucer c'est tromper", "finir dans la bouche", "Le viagra", "L'inceste", "La pornographie", "La pedopornographie", "La zoophilie"]
 ];
-
-
-
-
-
 
 
 const packages = [
