@@ -36,6 +36,7 @@ div#names div#name-input {
     width: 100%;
     height: 8vh;
     background-color: var(--text);
+    display: flex;
 }
 
 div#names div#name-input input{
