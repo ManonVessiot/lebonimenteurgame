@@ -13,7 +13,7 @@ div#rules h1{
 
 #rulesButtonsPanel {
     width: calc((100% - 2*1vh));
-    height: 12vh;
+    height: 18vh;
     display: flex;
     position: absolute;
     bottom: 0;

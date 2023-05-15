@@ -10,7 +10,7 @@ div#game{
 
 div#game h1#GameText{
     width: 100%;
-    height: calc((100% - 12vh));
+    height: calc((100% - 18vh));
     margin: 0;
     display:flex;
     align-items: center;
@@ -19,7 +19,7 @@ div#game h1#GameText{
 
 #GameButtonsPanel {
     width: calc((100% - 2*1vh));
-    height: 12vh;
+    height: 18vh;
     display: flex;
     position: absolute;
     bottom: 0;

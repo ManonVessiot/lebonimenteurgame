@@ -9,7 +9,7 @@ div#packages{
 /* List */
 div#packages div#packages-list {
     width: 100%;
-    height: 65vh;
+    height: 60vh;
     padding: 0;
     display: block;
     position: absolute;
@@ -92,7 +92,7 @@ div#packages div#packages-list .package div.package-text div{
 
 div#packages div#liarsNumber{
     width: calc(100% - 2*2vh);
-    height: 10vh;
+    height: 15vh;
     padding: 0 2vh;
     display: flex;
     position: absolute;
@@ -101,6 +101,7 @@ div#packages div#liarsNumber{
 }
 div#packages div#liarsNumber div{
     width: 70%;
+    height: 66%;
 }
 div#packages div#liarsNumber div input{
     width: 100%;
