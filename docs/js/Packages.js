@@ -55,7 +55,7 @@ class PackageList {
 
 function SetLiarsNumber(_number){
     const liarsNumber_html = document.getElementById('liarsNumber');
-    const number = Names.length - 1;
+    const number = Names.length - 2;
     var textHTML = "";
     if (number > 1){
         textHTML += "<div>" +

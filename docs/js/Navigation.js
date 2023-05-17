@@ -29,7 +29,7 @@ function OnRulesQuit(){
 }
 
 function OnNamesGiven(){
-    if (Names != null && Names.length >=2){
+    if (Names != null && Names.length > 2){
         NamesHTML.style.display = "none";
         PackagesHTML.style.display = "block";
         currentPage = 2;
